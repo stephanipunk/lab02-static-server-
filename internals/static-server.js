@@ -2,7 +2,7 @@
 // para crear mi servidor estatico 
 var fs = require ('fs'), 
     config = require('../config/config.js'),
-    mimen = require('mime');
+    mime = require('mime');
     // exportar la funcion de servidor statico 
     exports.server = function (url, res){
         //acompletar el path 
