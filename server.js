@@ -13,23 +13,22 @@ if(IP =='127.0.0.1'){
     console.log(">--- ejecutando en modo local----<");
 }
 // Crear un servidor basico 
-var server = http.createServer(function(req,res){
+var server = http.createServer(function (req,res) {
 // obter la url del archivo 
     var url = req.url;
-    console.log(`> url solicitada: ${url}...`.yellow);
-    if(url == "/"){
+    if(url == "/") {
     //sirve el  index 
     url = "/index.html";
 }
 // verificando que la peticion del cliente sea una ruta virtual 
-if(typeo(handlers[url]) === 'function'){
+if(typeof(handlers[url]) === 'function'){
     // si entro aqui,significa que existe un manejador para la url 
     // que se esta solicitando por lo tanto la ejecuto 
     handlers[url](req, res)
 }else{
     console.log(`>URL salicitada: ${url}... `.yellow);
     //sirvo la url con mi server statico
-    staticServer.server(url, res),
+    staticServer.server(url, res)
 }
 });  
 // sirvo la url con mi servidor statico 

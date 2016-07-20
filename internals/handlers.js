@@ -7,7 +7,7 @@ module.exports = {
         });
         //calculo la edad
         var hoy = new Date();
-        var age = Math.ceil((hoy - fechaNacimiento)/1000*3600*24*365);
+        var age = Math.ceil((hoy - fechaNacimiento)/(1000*3600*24*365));
         // armando el json
         var objetoRespuesta = {
             "edad": age
