@@ -17,13 +17,13 @@ module.exports = {
         //envio la respuesta al cliente
      res.end(jsonResponse);
    },
-   
-    //"/getfortune" : function (res,rep){
-       // var fotunepaper = {
+    "/getfortune" : function (req, res){
+        console.log("se solicita fortuna");
+        //var fotunepaper = {
            // "mensaje" : "La honestidad es un regalo caro, no lo esperes de gente barata"
-     };
+     //};
         fortune.getFortune(function(fortunePaper) {   
- //})
+})
         //se configura el encabezado de la respuesta HTTP
         res.writeHead(200,{
             "Content-Type" : "application/json"
