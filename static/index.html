@@ -1,26 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+body{
+    background-color: lightslategray;
+}
+
+h1{
+color :black;
+border-bottom: 1px solid black; 
+font-family: "Ravie";
+}
+
+
+h2{
+color :blue;
+border-bottom: 1px solid black; 
+font-family: "Bauhaus 93";
+}
+
+ p{
+		font-family: "Broadway";
+		font-size: 45px;
+		text-align: center;
+		color: yellow;
+	}
+    </style>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/sites.scss">
     <link rel="stylesheet" href="./vendor/sweetalert/dist/sweetalert.css">
-    <title></title>
+    <link type="text/css" rel="stylesheet" href="./vendor/materialize/dist/css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="./static/css/sites.scss">  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>    
 </head>
 <body >
-    <h1>Fortune cookie</h1>
-    <div id="title">
-    <p>Si tu fortuna quieres saber, la galleta de la suerte debes de romper</p>
+      
+  <div class="">
+      <span class="blue-text text-darken-2"></span>
     </div>
-   
-   <div id="cookie"><button onclic="getFortuneFromServer()">
-       ROMPER LA GALLETA</button>
+    
+    <h1 class="center-align">Fortune cookie</h1>
+    
+    <div id="title">
+<br>
+<br>
+<br>
+<div class="col s12 m2">
+      <p class="z-depth-5">!!!!Si tu fortuna quieres saber, la galleta de la suerte debes de rompe¡¡¡¡</p>
+    </div>
+    </div>
+   <center>
+       <br>
+       <br>
+       <br>       
+   <div id="cookie"><button onclick="getFortuneFromServer()">
+    <a class= "waves-effect waves-light btn"><i class="material-icons center"></i> ROMPER LA GALLETA</a></button>
+    <br>
+    <br>
+    <br>
+    <i class="large material-icons">thumb_up</i>
+   </center>
    </div>
-    <h2>Under construction</h2>
+    <div>
+    <br>
+    <br>
+    <br>
+    <h2 class="center-align">Under construction</h2>
+  </div>
+ <br>
+ <br>
+ <br>
+ <center>
     <div id="status">
         <img src="./img/construccion.jpg" alt="en construccion">
+        <div class="progress">
+      <div class="indeterminate"></div>
+  </div>
+</center>
     </div>
     <!-- seccion de scripts -->
     <script scr="./vendor/jquery/dist/jquery.js"></script>
     <script src="./vendor/sweetalert/dist/sweetalert.min.js"></script>
+     <script src="./vendor/materialize/dist/js/materialize.min.js"></script> 
     <script src = "./js/site.js"></script>
 </body>
 </html>
