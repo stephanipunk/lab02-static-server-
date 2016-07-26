@@ -12,18 +12,25 @@
     <link rel="stylesheet" href="./vendor/sweetalert/dist/sweetalert.css">
     <title></title>
     <style>
-        body{background-color: beige
-	}
-	p{
-		font-family: "Algerian";
-		font-size: 20px;
+        body{
+    background-color: lightslategray;
+}
+h1{
+color :black;
+border-bottom: 1px solid black; 
+font-family: "Ravie";
+}
+h2{
+color :blue;
+border-bottom: 1px solid black; 
+font-family: "Bauhaus 93";
+}
+ p{
+		font-family: "Broadway";
+		font-size: 45px;
 		text-align: center;
-		color: chocolate;
+		color: yellow;
 	}
-	h1{
-		color:pink;
-	}
-
 
     </style>
 </head>
@@ -34,25 +41,26 @@
         <div class="nav-wrapper black ">
             <a href="#" class="dark-logo">
                 <h1 class="center blue-text">
-                    GALLETA DE LA SUERTE
+                   Fortune cookie
                 </h1>
             </a>
         </div>
-        <div class="card-panel blue-grey darken-4">
             
     </nav>
     <br><br><br>
     <center>
         <img src="img/galleta.jpg" width="200" height="190" ><div class="card-panel blue-grey darken-3">
+            <div class="col s12 m2">
+ +      <p class="z-depth-5">!!!!Si tu fortuna quieres saber, la galleta de la suerte debes de rompe¡¡¡¡</p>
+ +    </div>
     </center>
-    <div class="card-panel blue-grey darken-2"></div>
+    
     <div class="center">
-        <a onclick="getFortuneFromServer()" class="waves-effect black btn-large">
-            <i class="large material-icons left"></i> ROMPER
+        <a onclick="getFortuneFromServer()" class="waves-effect green btn-large">
+            <i class="large material-icons left"></i> ROMPER la galleta
+            <i class="large material-icons">cloud</i>
         </a>
-              <div class="card-panel blue-grey darken-1"></div>
-      
-
+            
         <!-- Seccion de Scripts -->
         <script src="./vendor/jquery/dist/jquery.min.js"></script>
         <script src="./vendor/materialize/bin/materialize.js"></script>

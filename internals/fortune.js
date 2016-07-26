@@ -36,7 +36,7 @@ module.exports = {
                 // Parseo el objeto resultado en un arreglo
                 objetoRestultado.toArray(function(err, papers){
                     var fortunePaperResponse = 
-                    JSON.stringify(papers[0]);
+                     JSON.stringify(papers[Math.floor(Math.random() * papers.length)]);
                     // Cerrar la conexion entre el cliente
                     // y la base de datos
                     db.close()
