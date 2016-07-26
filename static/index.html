@@ -1,90 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <style>
-body{
-    background-color: lightslategray;
-}
-
-h1{
-color :black;
-border-bottom: 1px solid black; 
-font-family: "Ravie";
-}
-
-
-h2{
-color :blue;
-border-bottom: 1px solid black; 
-font-family: "Bauhaus 93";
-}
-
- p{
-		font-family: "Broadway";
-		font-size: 45px;
-		text-align: center;
-		color: yellow;
-	}
-    </style>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/sites.scss">
+    <!-- Import GOOGLE ICON FONT FAMILY -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Para importar localmente 
+    http://stackoverflow.com/questions/31283977/material-design-lite-fonts-and-icons -->
+    <!-- Import Materialize -->
+    <link rel="stylesheet" href="./vendor/materialize/bin/materialize.css">
     <link rel="stylesheet" href="./vendor/sweetalert/dist/sweetalert.css">
-    <link type="text/css" rel="stylesheet" href="./vendor/materialize/dist/css/materialize.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="./static/css/sites.scss">  
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title></title>    
+    <title></title>
+    <style>
+        body{background-color: beige
+	}
+	p{
+		font-family: "Algerian";
+		font-size: 20px;
+		text-align: center;
+		color: chocolate;
+	}
+	h1{
+		color:pink;
+	}
+
+
+    </style>
 </head>
-<body >
+
+<body>
+    <!-- Contenido -->
+    <nav>
+        <div class="nav-wrapper black ">
+            <a href="#" class="dark-logo">
+                <h1 class="center blue-text">
+                    GALLETA DE LA SUERTE
+                </h1>
+            </a>
+        </div>
+        <div class="card-panel blue-grey darken-4">
+            
+    </nav>
+    <br><br><br>
+    <center>
+        <img src="img/galleta.jpg" width="200" height="190" ><div class="card-panel blue-grey darken-3">
+    </center>
+    <div class="card-panel blue-grey darken-2"></div>
+    <div class="center">
+        <a onclick="getFortuneFromServer()" class="waves-effect black btn-large">
+            <i class="large material-icons left"></i> ROMPER
+        </a>
+              <div class="card-panel blue-grey darken-1"></div>
       
-  <div class="">
-      <span class="blue-text text-darken-2"></span>
-    </div>
-    
-    <h1 class="center-align">Fortune cookie</h1>
-    
-    <div id="title">
-<br>
-<br>
-<br>
-<div class="col s12 m2">
-      <p class="z-depth-5">!!!!Si tu fortuna quieres saber, la galleta de la suerte debes de rompe¡¡¡¡</p>
-    </div>
-    </div>
-   <center>
-       <br>
-       <br>
-       <br>       
-   <div id="cookie"><button onclick="getFortuneFromServer()">
-    <a class= "waves-effect waves-light btn"><i class="material-icons center"></i> ROMPER LA GALLETA</a></button>
-    <br>
-    <br>
-    <br>
-    <i class="large material-icons">thumb_up</i>
-   </center>
-   </div>
-    <div>
-    <br>
-    <br>
-    <br>
-    <h2 class="center-align">Under construction</h2>
-  </div>
- <br>
- <br>
- <br>
- <center>
-    <div id="status">
-        <img src="./img/construccion.jpg" alt="en construccion">
-        <div class="progress">
-      <div class="indeterminate"></div>
-  </div>
-</center>
-    </div>
-    <!-- seccion de scripts -->
-    <script scr="./vendor/jquery/dist/jquery.js"></script>
-    <script src="./vendor/sweetalert/dist/sweetalert.min.js"></script>
-     <script src="./vendor/materialize/dist/js/materialize.min.js"></script> 
-    <script src = "./js/site.js"></script>
+
+        <!-- Seccion de Scripts -->
+        <script src="./vendor/jquery/dist/jquery.min.js"></script>
+        <script src="./vendor/materialize/bin/materialize.js"></script>
+        <script src="./vendor/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="./js/site.js"></script>
 </body>
+
 </html>
