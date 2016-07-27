@@ -23,15 +23,15 @@ module.exports = {
     "/getfortune": function(req, res){
         console.log("> Se solicita fortuna...");
         // // Se obtiene el mensaje de la suerte
-        fortune.getFortune(function(fortunePaper){
+        fortune.getFortune(function(fortunePapers){
             // Se configura el encabezado de respuesta
             // HTTP
             res.writeHead(200,{
                 "Content-Type" : "application/json"
             });
-            console.log("Contestando: " + fortunePaper);
+            console.log("Contestando: " + fortunePapers);
             // Respondemos el Objeto
-            res.end(fortunePaper);
+            res.end(fortunePapers);
         });
     }
 };
